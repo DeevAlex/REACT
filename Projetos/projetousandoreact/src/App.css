@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+:root {
+  --cor0: #111317;
+  --cor1: #1f2125;
+  --cor2: #35373b;
+  --cor3: #f9ac54;
+  --cor4: #d79447;
+  --cor5: #d1d5db;
+  --cor6: #ffffff;
+  --cor1-transparente: rgba(17, 19, 23, 0.99);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--cor1-transparente);
+  display: grid;
+  overflow-x: hidden;
+  grid-template-areas:
+    "Nav Nav Nav"
+    "MainStart MainStart MainStart"
+    "mainProgram mainProgram mainProgram"
+    "mainClass mainClass mainClass"
+    "mainPlans mainPlans mainPlans"
+    "mainJoinUs mainJoinUs mainJoinUs"
+    "mainComment mainComment mainComment"
+    "Footer Footer Footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+}
+
+.icon {
+  color: var(--cor6);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapperColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn:hover {
+  background-color: var(--cor4);
+  transition: 0.5s ease-in-out;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  color: var(--cor6);
+}
+
+h3 {
+  color: var(--cor6);
+}
+
+span {
+  color: var(--cor6);
+}
+
+p {
+  color: var(--cor5);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--cor6);
+}
+
+.btn {
+  background-color: var(--cor3);
+  color: var(--cor6);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    grid-template-areas:
+      "Nav"
+      "MainStart"
+      "mainProgram"
+      "mainClass"
+      "mainPlans"
+      "mainJoinUs"
+      "mainComment"
+      "Footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+}

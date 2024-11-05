@@ -1,0 +1,129 @@
+.mainProgram {
+  grid-area: mainProgram;
+  display: flex;
+  justify-content: center;
+}
+
+.mainProgram .explorePrograms {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--cor6);
+}
+
+.mainProgram .wrapperColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainProgram .programs {
+  margin: 20px 0;
+  justify-content: center;
+  gap: 50px;
+}
+
+.program {
+  display: block;
+  width: 240px;
+  padding: 15px;
+  background-color: var(--cor1);
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.program h3 {
+  margin-top: 10px;
+}
+
+.program p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.program:hover {
+  border: 1px solid var(--cor4);
+  background-color: var(--cor2);
+  transition: 0.3s ease-in-out;
+}
+
+.bg-emphasis {
+  background-color: var(--cor4);
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.linkProgram {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.linkProgram:hover {
+  color: var(--cor3);
+  transition: ease-in-out 0.3s;
+}
+
+.mainProgram .wrapper .icon:hover {
+  color: var(--cor4);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainProgram {
+    width: 100%;
+  }
+
+  .explorePrograms {
+    width: 100%;
+  }
+
+  .mainProgram .programs {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainProgram {
+    width: 100%;
+  }
+
+  .mainProgram article {
+    width: 95%;
+  }
+
+  .mainProgram .explorePrograms {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .program {
+    display: block;
+    width: 55%;
+    padding: 10px;
+    background-color: var(--cor1);
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+
+  .program p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainProgram {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .program {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    background-color: var(--cor1);
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+}

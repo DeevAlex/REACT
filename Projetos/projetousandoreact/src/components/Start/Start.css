@@ -1,0 +1,195 @@
+.mainStart {
+  grid-area: MainStart;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  height: 75vh;
+}
+
+.background::after {
+  content: "O";
+  font-weight: 600;
+  position: absolute;
+  top: 39%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 26vw;
+  font-weight: 500;
+  z-index: -1;
+  color: rgba(249, 172, 84, 0.15);
+  pointer-events: none;
+}
+
+.background::before {
+  content: "FITNESS";
+  font-weight: 600;
+  position: absolute;
+  top: 86%;
+  left: 47%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-size: 9vw;
+  color: rgba(255, 255, 255, 0.14);
+  pointer-events: none;
+}
+
+.wrapper {
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper h5 {
+  font-size: 1.2rem;
+  color: var(--cor4);
+}
+
+.wrapper article {
+  width: 30%;
+}
+
+.wrapper img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.wrapper h1 {
+  font-size: 4.5rem;
+  color: var(--cor5);
+}
+
+.wrapper button {
+  margin: 20px 0 0 0;
+}
+
+.titleEmphasis {
+  color: var(--cor1);
+  text-shadow: -1px -1px 0 var(--cor6), 1px -1px 0 var(--cor6),
+    -1px 1px 0 var(--cor6), 1px 1px 0 var(--cor6);
+}
+
+@media screen and (max-width: 1440px) {
+  .mainStart .wrapper {
+    width: 100%;
+  }
+
+  .mainStart .wrapper h5 {
+    font-size: 1rem;
+  }
+
+  .mainStart .wrapper .title {
+    font-size: 3rem;
+  }
+
+  .mainStart article {
+    width: 30%;
+  }
+
+  .background::after {
+    content: "O";
+    font-weight: 600;
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 32vw;
+    font-weight: 500;
+    z-index: -1;
+    color: rgba(249, 172, 84, 0.15);
+    pointer-events: none;
+  }
+
+  .background::before {
+    content: "FITNESS";
+    font-weight: 600;
+    position: absolute;
+    top: 84%;
+    left: 45%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    color: rgba(255, 255, 255, 0.14);
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainStart .wrapper {
+    width: 90%;
+  }
+
+  .mainStart .wrapper h5 {
+    font-size: 1rem;
+  }
+
+  .mainStart .wrapper .title {
+    font-size: 2.5rem;
+  }
+
+  .mainStart article {
+    width: 75%;
+  }
+
+  .mainStart img {
+    width: 30%;
+    aspect-ratio: 0.6/1;
+  }
+
+  .background::after {
+    content: "O";
+    font-weight: 600;
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 32vw;
+    font-weight: 500;
+    z-index: -1;
+    color: rgba(249, 172, 84, 0.15);
+    pointer-events: none;
+  }
+
+  .background::before {
+    content: "FITNESS";
+    font-weight: 600;
+    position: absolute;
+    top: 75%;
+    left: 51%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    font-size: 12vw;
+    color: rgba(255, 255, 255, 0.14);
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainStart {
+    width: 100vw;
+  }
+
+  .wrapper article {
+    width: 80%;
+  }
+
+  .wrapper h1 {
+    font-size: 3rem;
+  }
+
+  .wrapper p {
+    font-size: 1rem;
+  }
+
+  .mainStart img {
+    display: none;
+  }
+
+  .background::after {
+    display: none;
+  }
+
+  .background::before {
+    display: none;
+  }
+}

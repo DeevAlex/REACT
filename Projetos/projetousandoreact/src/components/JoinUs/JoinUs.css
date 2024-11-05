@@ -1,0 +1,156 @@
+.mainJoinUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem auto;
+  color: var(--cor6);
+}
+
+.articleJoinUs {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.articleJoinUs h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+.articleJoinUs img {
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+.articleJoinUs .paragraphJoinUs {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.informations {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.informations img {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionJoinUs {
+  display: flex;
+  border-radius: 15px;
+  background-color: var(--cor1);
+  position: absolute;
+  max-width: 85%;
+  min-width: 40%;
+  height: 12vh;
+  bottom: 2%;
+  padding: 20px;
+  text-align: left;
+  left: 8%;
+}
+
+.joinUsInfo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .mainJoinUs article {
+    width: 100vw;
+  }
+
+  .informations {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .informations img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sectionJoinUs {
+    width: 100%;
+    bottom: 0%;
+  }
+
+  .sectionJoinUs .joinUsInfo h3 {
+    font-size: 0.9rem;
+  }
+
+  .sectionJoinUs .joinUsInfo p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mainJoinUs article {
+    width: 100vw;
+  }
+
+  .informations {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .informations img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sectionJoinUs {
+    width: 100%;
+    bottom: 0%;
+  }
+
+  .sectionJoinUs .joinUsInfo h3 {
+    font-size: 0.79rem;
+  }
+
+  .sectionJoinUs .joinUsInfo p {
+    font-size: 0.73rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainJoinUs article {
+    width: 100vw;
+  }
+
+  .mainJoinUs article img {
+    width: 90vw;
+    margin: 25px auto;
+  }
+
+  .sectionJoinUs {
+    width: 90vw;
+    bottom: 0%;
+    left: 5%;
+  }
+
+  .articleJoinUs .joinUsInfo h3 {
+    margin-top: 10px;
+  }
+
+  .sectionJoinUs {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--cor1);
+  }
+
+  .sectionJoinUs .joinUsInfo h3 {
+    font-size: 0.8rem;
+  }
+
+  .sectionJoinUs .joinUsInfo p {
+    font-size: 1rem;
+  }
+}
