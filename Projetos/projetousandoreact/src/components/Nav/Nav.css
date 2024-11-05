@@ -1,0 +1,161 @@
+.navLinks {
+  grid-area: Nav;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  justify-content: space-evenly; /* Para espaçar o logo, links e o botão */
+  padding: 0 2rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.listLinks {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+.linkNav {
+  position: relative;
+  text-decoration: none;
+  color: var(--cor6);
+  transition: color 0.3s;
+}
+
+.linkNav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--cor6);
+  transition: width 0.3s ease;
+}
+
+.linkNav:hover::after {
+  width: 60%;
+}
+
+.btnNav {
+  background-color: var(--cor4);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btnNav:hover {
+  background-color: var(--cor3);
+}
+
+.btnNav.active {
+  display: none;
+}
+
+@media screen and (max-width: 1920px) {
+  .menuToggle {
+    display: none;
+  }
+
+  .listLinks {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navLinks {
+    width: 100vw;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .menuToggle {
+    display: flex;
+    font-size: 2rem;
+    background-color: transparent;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    color: aliceblue;
+    padding: 8px;
+  }
+
+  .navLinks {
+    width: 100vw;
+    align-items: center;
+  }
+
+  .listLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+  }
+
+  .listLinks.active {
+    display: flex;
+  }
+
+  .btnNav {
+    align-self: center;
+    margin-top: 10px;
+  }
+
+  .btnNav.active {
+    display: flex;
+  }
+
+  .btnNav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navLinks {
+    width: 100vw;
+    align-items: center;
+  }
+
+  .menuToggle {
+    display: flex;
+    z-index: 2;
+  }
+
+  .listLinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+  }
+
+  .listLinks.active {
+    display: flex;
+    transition: display 1s ease;
+    justify-content: center;
+  }
+
+  .btnNav {
+    display: none;
+  }
+
+  .btnNav {
+    align-self: center;
+    margin-top: 10px;
+  }
+}

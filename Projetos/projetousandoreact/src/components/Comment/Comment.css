@@ -1,0 +1,80 @@
+.mainComment {
+  background-color: var(--cor1);
+  margin-top: 5rem;
+}
+
+.mainComment article {
+  padding: 50px 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper.wrapperComment {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 75%;
+  align-items: start;
+}
+
+.wrapperColumn .comment {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 20px;
+}
+
+.quote {
+  font-size: 5rem;
+}
+
+.authors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.authors img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.authors span {
+  color: var(--cor5);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.othersAuthors {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.othersAuthors i:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainComment {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .mainComment {
+    width: 100vw;
+  }
+
+  .wrapper.wrapperComment {
+    flex-direction: column;
+  }
+}

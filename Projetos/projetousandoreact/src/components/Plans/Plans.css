@@ -1,0 +1,122 @@
+.mainPlans article {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapperColumn.firstContainer {
+  text-align: center;
+}
+
+.wrapperColumn.firstContainer h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.wrapperColumn.firstContainer p {
+  width: 60%;
+  margin: 0 auto 50px auto;
+}
+
+.wrapper.wrapperPlans .plan .planInfo h3 {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.wrapper.wrapperPlans .plan .planInfo span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.wrapper.wrapperPlans .plan {
+  border: 1px solid transparent;
+  padding: 20px;
+  margin: 0 auto;
+  height: 42vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--cor1);
+  border-radius: 10px;
+  width: 25%;
+}
+
+.checkWhatHaveInPlan.wrapper {
+  margin: 5px 0;
+}
+
+.wrapper.wrapperPlans .plan:hover {
+  background-color: var(--cor2);
+  border: 1px solid var(--cor3);
+  transition: background 0.3s ease-in-out;
+}
+
+.checkWhatHaveInPlan.wrapper {
+  justify-content: left;
+  gap: 10px;
+}
+
+.check {
+  color: var(--cor1);
+}
+
+.wrapper.wrapperPlans .plan hr {
+  width: 90%;
+  margin: 25px auto;
+}
+
+.wrapper.wrapperPlans .plan .btn {
+  background-color: transparent;
+  border: 2px solid var(--cor3);
+}
+
+.wrapper.wrapperPlans .plan .btn:hover {
+  background-color: var(--cor3);
+}
+
+@media screen and (max-width: 1440px) {
+  .mainPlans {
+    width: 100vw;
+  }
+
+  .mainPlans article {
+    width: 100%;
+  }
+
+  .wrapperColumn.colunaPlans {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper.wrapperPlans .plan {
+    width: 30%;
+    gap: 10px;
+  }
+
+  .wrapper.wrapperPlans p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainPlans article {
+    width: 100%;
+  }
+
+  .wrapperColumn.colunaPlans {
+    width: 100vw;
+  }
+
+  .wrapper.wrapperPlans .plan {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .wrapper.wrapperPlans {
+    flex-direction: column;
+  }
+
+  .programs.wrapper {
+    flex-direction: column;
+  }
+}
