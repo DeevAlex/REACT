@@ -1,0 +1,16 @@
+.post {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 500ms ease-in-out;
+  }
+  
+  .post:hover {
+    transform: scale(1.05);
+  }
+  
+  .post img {
+    max-width: 100%;
+  }
+  
+  .postContent {
+    padding: 30px;
+  }

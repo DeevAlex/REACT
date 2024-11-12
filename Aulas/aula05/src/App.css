@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #282828;
+}
+
+.posts {
+  display: grid;
+  color: #fff;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+} 
+
+.post {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 500ms ease-in-out;
+}
+
+.post:hover {
+  transform: scale(1.05);
+}
+
+.post img {
+  max-width: 100%;
+}
+
+.postContent {
+  padding: 30px;
+}
